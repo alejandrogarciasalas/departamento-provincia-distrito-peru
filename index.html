@@ -1,0 +1,269 @@
+<!-- ***** departamento-provincia-distrito-peru ***** -->
+<!-- 
+- El siguiente código presenta tres dropdowns, departamento, provincia y distrito. 
+
+- Departamento y provincia tienen por defecto todas sus opciones respectivas.
+
+- El valor de provincia cambia dinamicamente en relación al valor del departamento seleccionado y el valor de distrito en relación al de la provincia seleccionada. Se sigue la siguiente estructura: departamento>provincia>distrito. 
+
+Ver departamento-provincia-distrito.js para más información.
+-->
+
+<!-- ***** 24 departamentos del Perú ***** -->
+<select name="departamento" id="departamento">
+	<option value="Departamento">Departamento</option>
+	<option value="Amazonas">Amazonas</option>              
+	<option value="Ancash">Ancash</option>              
+	<option value="Apurimac">Apurimac</option>              
+	<option value="Arequipa">Arequipa</option>              
+	<option value="Ayacucho">Ayacucho</option>              
+	<option value="Cajamarca">Cajamarca</option>              
+	<option value="Cusco">Cusco</option>              
+	<option value="Huancavelica">Huancavelica</option>              
+	<option value="Huanuco">Huanuco</option>              
+	<option value="Ica">Ica</option>              
+	<option value="Junin">Junin</option>              
+	<option value="La Libertad">La Libertad</option>              
+	<option value="Lambayeque">Lambayeque</option>              
+	<option value="Lima">Lima</option>              
+	<option value="Loreto">Loreto</option>              
+	<option value="Madre de Dios">Madre de Dios</option>              
+	<option value="Moquegua">Moquegua</option>              
+	<option value="Pasco">Pasco</option>              
+	<option value="Piura">Piura</option>              
+	<option value="Puno">Puno</option>              
+	<option value="San Martin">San Martin</option>              
+	<option value="Tacna">Tacna</option>              
+	<option value="Tumbes">Tumbes</option>              
+	<option value="Ucayali">Ucayali</option>              
+</select>
+
+
+<!-- ***** 196 provincias de los 24 departamentos del Perú ***** -->
+<select id="provincia" name="provincia">
+	<option value="Provincia">Provincia</option>
+	<!-- 1. Provincias de Amazonas -->
+	<option value="Bagua">Bagua</option>
+	<option value="Bongara">Bongara</option>
+	<option value="Chachapoyas">Chachapoyas</option>
+	<option value="Condorcanqui">Condorcanqui</option>
+	<option value="Luya">Luya</option>
+	<option value="Rodriguez de Mendoza">Rodriguez de Mendoza</option>
+	<option value="Utcubamba">Utcubamba</option>
+	<!-- 2. Provincias de Ancash  -->
+	<option value="Aija">Aija</option>
+	<option value="Antonio Raymondi">Antonio Raymondi</option>
+	<option value="Asuncion">Asuncion</option>
+	<option value="Bolognesi">Bolognesi</option>
+	<option value="Carhuaz">Carhuaz</option>
+	<option value="Carlos Fermin Fitzcarrald">Carlos Fermin Fitzcarrald</option>
+	<option value="Casma">Casma</option>
+	<option value="Corongo">Corongo</option>
+	<option value="Huaraz">Huaraz</option>
+	<option value="Huari">Huari</option>
+	<option value="Huarmey">Huarmey</option>
+	<option value="Huaylas">Huaylas</option>
+	<option value="Mariscal Luzuriaga">Mariscal Luzuriaga</option>
+	<option value="Ocros">Ocros</option>
+	<option value="Pallasca">Pallasca</option>
+	<option value="Pomabamba">Pomabamba</option>
+	<option value="Recuay">Recuay</option>
+	<option value="Santa">Santa</option>
+	<option value="Sihuas">Sihuas</option>
+	<option value="Yungay">Yungay</option>
+	<!-- 3. Provincias de Apurimac -->
+	<option value="Abancay">Abancay</option>
+	<option value="Andahuaylas">Andahuaylas</option>
+	<option value="Antabamba">Antabamba</option>
+	<option value="Aymaraes">Aymaraes</option>
+	<option value="Chincheros">Chincheros</option>
+	<option value="Cotabambas">Cotabambas</option>
+	<option value="Grau">Grau</option>
+	<!-- 4. Provincias de Arequipa -->
+	<option value="Arequipa">Arequipa</option>
+	<option value="Camana">Camana</option>
+	<option value="Caraveli">Caraveli</option>
+	<option value="Castilla">Castilla</option>
+	<option value="Caylloma">Caylloma</option>
+	<option value="Condesuyos">Condesuyos</option>
+	<option value="Islay">Islay</option>
+	<option value="La Union">La Union</option>
+	<!-- 5. Provincias de Ayacucho -->
+	<option value="Cangallo">Cangallo</option>
+	<option value="Huamanga">Huamanga</option>
+	<option value="Huanca Sancos">Huanca Sancos</option>
+	<option value="Huanta">Huanta</option>
+	<option value="La Mar">La Mar</option>
+	<option value="Lucanas">Lucanas</option>
+	<option value="Parinacochas">Parinacochas</option>
+	<option value="Paucar del Sara">Paucar del Sara</option>
+	<option value="Sucre">Sucre</option>
+	<option value="Victor Fajardo">Victor Fajardo</option>
+	<option value="Vilcas Huaman">Vilcas Huaman</option>
+	<!-- 6. Provincias de Cajamarca -->
+	<option value="Cajabamba">Cajabamba</option>
+	<option value="Cajamarca">Cajamarca</option>
+	<option value="Celendin">Celendin</option>
+	<option value="Chota">Chota</option>
+	<option value="Contumaza">Contumaza</option>
+	<option value="Cutervo">Cutervo</option>
+	<option value="Hualgayoc">Hualgayoc</option>
+	<option value="Jaen">Jaen</option>
+	<option value="San Ignacio">San Ignacio</option>
+	<option value="San Marcos">San Marcos</option>
+	<option value="San Miguel">San Miguel</option>
+	<option value="San Pablo">San Pablo</option>
+	<option value="Santa Cruz">Santa Cruz</option>
+	<!-- 7. Provincias de Cusco -->
+	<option value="Acomayo">Acomayo</option>
+	<option value="Anta">Anta</option>
+	<option value="Calca">Calca</option>
+	<option value="Canas">Canas</option>
+	<option value="Canchis">Canchis</option>
+	<option value="Chumbivilcas">Chumbivilcas</option>
+	<option value="Cusco">Cusco</option>
+	<option value="Espinar">Espinar</option>
+	<option value="La Convencion">La Convencion</option>
+	<option value="Paruro">Paruro</option>
+	<option value="Paucartambo">Paucartambo</option>
+	<option value="Quispicanchi">Quispicanchi</option>
+	<option value="Urubamba">Urubamba</option>
+	<!-- 8. Provincias de Huancavelica -->
+	<option value="Acobamba">Acobamba</option>
+	<option value="Angaraes">Angaraes</option>
+	<option value="Castrovirreyna">Castrovirreyna</option>
+	<option value="Churcampa">Churcampa</option>
+	<option value="Huancavelica">Huancavelica</option>
+	<option value="Huaytara">Huaytara</option>
+	<option value="Tayacaja">Tayacaja</option>
+	<!-- 9. Provincias de Huanuco -->
+	<option value="Ambo">Ambo</option>
+	<option value="Dos de Mayo">Dos de Mayo</option>
+	<option value="Huacaybamba">Huacaybamba</option>
+	<option value="Huamalies">Huamalies</option>
+	<option value="Huanuco">Huanuco</option>
+	<option value="Lauricocha">Lauricocha</option>
+	<option value="Leoncio Prado">Leoncio Prado</option>
+	<option value="Marañon">Marañon</option>
+	<option value="Pachitea">Pachitea</option>
+	<option value="Puerto Inca">Puerto Inca</option>
+	<option value="Yarowilca">Yarowilca</option>
+	<!-- 10. Provincias de Ica -->
+	<option value="Chincha">Chincha</option>
+	<option value="Ica">Ica</option>
+	<option value="Nazca">Nazca</option>
+	<option value="Palpa">Palpa</option>
+	<option value="Pisco">Pisco</option>
+	<!-- 11. Provincias de Junin -->
+	<option value="Chanchamayo">Chanchamayo</option>
+	<option value="Chupaca">Chupaca</option>
+	<option value="Concepcion">Concepcion</option>
+	<option value="Huancayo">Huancayo</option>
+	<option value="Jauja">Jauja</option>
+	<option value="Junin">Junin</option>
+	<option value="Satipo">Satipo</option>
+	<option value="Tarma">Tarma</option>
+	<option value="Yauli">Yauli</option>
+	<!-- 12. Provincias de La Libertad -->
+	<option value="Ascope">Ascope</option>
+	<option value="Bolivar">Bolivar</option>
+	<option value="Chepen">Chepen</option>
+	<option value="Gran Chimu">Gran Chimu</option>
+	<option value="Julcan">Julcan</option>
+	<option value="Otuzco">Otuzco</option>
+	<option value="Pacasmayo">Pacasmayo</option>
+	<option value="Pataz">Pataz</option>
+	<option value="Sanchez Carrion">Sanchez Carrion</option>
+	<option value="Santiago de Chuco">Santiago de Chuco</option>
+	<option value="Trujillo">Trujillo</option>
+	<option value="Viru">Viru</option>
+	<!-- 13. Provincias de Lambayeque -->
+	<option value="Chiclayo">Chiclayo</option>
+	<option value="Ferreñafe">Ferreñafe</option>
+	<option value="Lambayeque">Lambayeque</option>
+	<!-- 14. Provincias de Lima -->
+	<option value="Barranca">Barranca</option>
+	<option value="Cajatambo">Cajatambo</option>
+	<option value="Callao">Callao</option>
+	<option value="Canta">Canta</option>
+	<option value="Cañete">Cañete</option>
+	<option value="Huaral">Huaral</option>
+	<option value="Huarochiri">Huarochiri</option>
+	<option value="Huaura">Huaura</option>
+	<option value="Lima">Lima</option>
+	<option value="Oyon">Oyon</option>
+	<option value="Yauyos">Yauyos</option>
+	<!-- 15. Provincias de Loreto -->
+	<option value="Alto Amazonas">Alto Amazonas</option>
+	<option value="Datem del Marañon">Datem del Marañon</option>
+	<option value="Loreto">Loreto</option>
+	<option value="Mariscal Ramon Castilla">Mariscal Ramon Castilla</option>
+	<option value="Maynas">Maynas</option>
+	<option value="Requena">Requena</option>
+	<option value="Ucayali">Ucayali</option>
+	<!-- 16. Provincias de Madre de Dios -->
+	<option value="Manu">Manu</option>
+	<option value="Tahuamanu">Tahuamanu</option>
+	<option value="Tambopata">Tambopata</option>
+	<!-- 17. Provincias de Moquegua -->
+	<option value="General Sanchez Cerro">General Sanchez Cerro</option>
+	<option value="Ilo">Ilo</option>
+	<option value="Mariscal Nieto">Mariscal Nieto</option>
+	<!-- 18. Provincias de Pasco -->
+	<option value="Daniel Alcides Carrion">Daniel Alcides Carrion</option>
+	<option value="Oxapampa">Oxapampa</option>
+	<option value="Pasco">Pasco</option>
+	<!-- 19. Provincias de Piura -->
+	<option value="Ayabaca">Ayabaca</option>
+	<option value="Huancabamba">Huancabamba</option>
+	<option value="Morropon">Morropon</option>
+	<option value="Paita">Paita</option>
+	<option value="Piura">Piura</option>
+	<option value="Sechura">Sechura</option>
+	<option value="Sullana">Sullana</option>
+	<option value="Talara">Talara</option>
+	<!-- 20. Provincias de Puno -->
+	<option value="Azangaro">Azangaro</option>
+	<option value="Carabaya">Carabaya</option>
+	<option value="Chucuito">Chucuito</option>
+	<option value="El Collao">El Collao</option>
+	<option value="Huancane">Huancane</option>
+	<option value="Lampa">Lampa</option>
+	<option value="Melgar">Melgar</option>
+	<option value="Moho">Moho</option>
+	<option value="Puno">Puno</option>
+	<option value="San Antonio de Putina">San Antonio de Putina</option>
+	<option value="San Roman">San Roman</option>
+	<option value="Sandia">Sandia</option>
+	<option value="Yunguyo">Yunguyo</option>
+	<!-- 21. Provincias de San Martin -->
+	<option value="Bellavista">Bellavista</option>
+	<option value="El Dorado">El Dorado</option>
+	<option value="Huallaga">Huallaga</option>
+	<option value="Lamas">Lamas</option>
+	<option value="Mariscal Caceres">Mariscal Caceres</option>
+	<option value="Moyobamba">Moyobamba</option>
+	<option value="Picota">Picota</option>
+	<option value="Rioja">Rioja</option>
+	<option value="San Martin">San Martin</option>
+	<option value="Tocache">Tocache</option>
+	<!-- 22. Provincias de Tacna -->
+	<option value="Candarave">Candarave</option>
+	<option value="Jorge Basadre">Jorge Basadre</option>
+	<option value="Tacna">Tacna</option>
+	<option value="Tarata">Tarata</option> 
+	<!-- 23. Provincias de Tumbes -->
+	<option value="Contralmirante Villar">Contralmirante Villar</option>
+	<option value="Tumbes">Tumbes</option>
+	<option value="Zarumilla">Zarumilla</option> 
+	<!-- 24. Provincias de Ucayali -->
+	<option value="Atalaya">Atalaya</option>
+	<option value="Coronel Portillo">Coronel Portillo</option>
+	<option value="Padre Abad">Padre Abad</option>
+	<option value="Purus">Purus</option> 
+</select>
+
+<!-- el html del dropdown 'distrito' cambia dinamicamente de acuerdo al valor del dropdown 'provincia'. ver departamento-provincia-distrito.js  para más información. -->
+<select id="distrito" name="distrito">
+	<option value="distrito">Distrito</option>
+</select>
